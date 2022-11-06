@@ -52,7 +52,7 @@ function App(){
     setKeyword(e.target.value);
     setPage(1);
     console.log(keyword,e.target.value);
-    if(keyword===""){
+    if(e.target.value===""){
       setSuggestions([]);
     } 
     else setSuggestions(pokemonList.filter((val)=>{return KMP(val.name,keyword)}).slice(0,5));
