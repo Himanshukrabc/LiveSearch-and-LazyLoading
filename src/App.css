@@ -1,0 +1,95 @@
+.App{
+  margin: 0;
+  padding: 0;
+  background-color: #fffbf4;
+}
+
+.header{
+  height: 8vh;
+  width:100vw;
+  background-color: #202226;
+  display: flex;
+  font-size: 2em;
+  font-weight: 500;
+  color:#fff9ed;
+  line-height: 8vh;
+}
+
+.header-left{
+  flex:0.4;
+  padding-left: 1vw;
+}
+
+.header-right{
+  flex:0.8;
+  align-items: center;
+}
+
+.header-right > input{
+  width:40vw;
+  border:none;
+  height:4vh;
+  padding-left: 1vw;
+  border-radius: 1vh;
+  font-size: 0.6em;
+}
+
+.options{
+  position: relative;
+  z-index: 2;
+  background-color: rgb(228, 228, 228,0.5);
+  width:40vw;
+  height: 4vh;
+  overflow: hidden;
+  line-height: 3vh;
+  font-size: 0.65em;
+  padding-left: 1vw;
+  color: black;
+}
+
+.options:hover,.options:focus{
+  background-color: rgba(112, 112, 112, 0.5);
+}
+
+input:focus{
+  outline: none;
+}
+
+.container-right{
+  flex:0.22;
+  display: flex;
+  overflow: hidden;
+}
+
+.tile-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+
+.pagination{
+  margin: auto;
+  display: inline-block;
+  z-index: 5;
+  position: fixed;
+  top:90%;
+  left: 40%;
+  background-color: #202226;
+  border-radius: 20px;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: white;
+  color: black;
+}
+
+.pagination a:hover:not(.active) {background-color: rgb(58, 58, 58);}
